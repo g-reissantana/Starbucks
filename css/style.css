@@ -77,6 +77,8 @@ nav ul li:first-child {
     padding-right: 20px;
 }
 nav ul li:first-child div{
+    display: none;
+
     color: #fff;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 2em;
