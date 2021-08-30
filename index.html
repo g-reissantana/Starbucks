@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+
+    <!-- SCRIPTS -->
+    
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="line"></div>
+        <div class="container">
+            <div class="header">
+                <div class="header--logo">
+                    <a href="/"></a><img src="/assets/logo.png" alt="Logo Starbucks"></a>
+                </div>
+    
+                <div class="header--menu">
+                    <form>
+                        <input placeholder="Search..." type="text">
+                        <button>
+                            <img src="/assets/loupe.png" alt="ícone buscar"/>
+                        </button>
+                    </form>
+
+                    <img class="header--menu-icon" src="/assets/menu.png" alt="ícone de menu">
+                    <nav>
+                        <ul>
+                            <li> <div data-close="x">X</div> </li>
+                            <li> <a href="/">Home</a> </li>
+                            <li> <a target="_blank" href="https://www.linkedin.com/in/gabriel-reis-197147210/">Linkedin</a> </li>
+                            <li> <a target="_blank" href="https://github.com/g-reissantana">Github</a> </li>
+                            <li> <a target="_blank" href="https://www.instagram.com/g.reissantana/">Instagram</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section--banner">
+        <div class="container">
+            <div class="banner">
+                <h1>Starbucks®<br/>Happy Hour</h1>
+                <span>We’ll meet you in your inbox. Drink deals are on their way.</span>
+
+                <div class="banner--images">
+                    <img src="/assets/c1.jpg" alt="Café de caramelo">
+                    <img src="/assets/c2.jpg" alt="Café de chocolate">
+                    <img src="/assets/c3.jpg" alt="Café de baunilha">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-area1">
+        <div class="section-area1--content">
+            <div class="bar"></div>
+            <div class="section-area1--content-title">
+                Four Drinks, A Million<br/>Reasons
+            </div>
+            <div class="section-area1--content-quote">
+                <em>"Just love yourself and you're set."</em> – Lady Gaga
+            </div>
+            <div class="section-area1--content-text">
+                Lady Gaga and Starbucks share a mission: to build a kinder, braver world. Through the Born This Way Foundation, Lady Gaga has inspired her fans to embrace kindness in their communities—online and in the world. With your help, we can empower young people to spread more kindness.
+            </div>
+
+            <a class="button" href="/">Learn more</a>
+        </div>
+        <div class="section-area1--img1"></div>
+        <div class="section-area1--img2"></div>
+    </section>
+
+    <section class="section-area2">
+            <div class="section-area2--content">
+                <div class="bar"></div>
+                <div class="section-area2--content-title">
+                    Introducing Vanilla Sweet Cream Cold Brew—Sweet, Creamy, Cold, Bold.
+                </div>
+                <div class="section-area2--content-quote">
+                    <em>"Starbucks is AMAZING!!!."</em> – Gabriel Reis
+                </div>
+                <div class="section-area2--content-text">
+                    Just before serving, our slow-steeped custom blend Starbucks® Cold Brew Coffee is topped with a delicate float of house-made vanilla sweet cream that cascades throughout the cup.
+                </div>
+    
+                <a class="button" href="/">Learn more</a>
+            </div>
+
+            <div class="section-area2--img1"></div>
+            <div class="section-area2--img2"></div>
+    </section>
+
+    <section class="section-area3">
+        <div class="section-area3--content">
+            <div class="section-area3--content-title">
+                The New Ultra Caramel<br/>Frappuccino Is Here!
+            </div>
+            <div class="section-area3--content-text">
+                Congrats on doing that thing! This calls for caramel. Lots of it. With cold brew whipped cream. The new Ultra Caramel Frappuccino is here!
+            </div>
+
+            <a class="button" href="/">Learn more</a>
+        </div>
+
+        <div class="section-area3--img"></div>
+    </section>
+
+
+    <section class="section-area4">
+        <div class="section-area4--content">
+            <div class="bar"></div>
+            <div class="section-area4--content-title">
+                Kindness Starts<br/>With A Cup
+            </div>
+            <div class="section-area4--content-text">
+                Introducing the Cups of Kindness collection: four very special drinks as delicious and refreshing as they are beautiful. Two new creations, Matcha Lemonade and Violet Drink, will join Pink Drink and Ombré Pink Drink as instant summer favorites.
+            </div>
+
+            <a class="button" href="/">Learn more</a>
+        </div>
+
+        <div class="section-area4--img"></div>
+    </section>
+
+    <section class="section-area5">
+    </section>
+
+    <footer>
+        Criado por Gabriel Reis&copy;<br/><br/>
+        Créditos do layout para Nicepage
+    </footer>
+
+    
+    <script>
+        const menu = document.getElementsByTagName('ul')[0]
+        const menuIcon = document.querySelector('.header--menu-icon')
+        const closeIcon = document.querySelector('[data-close]')
+
+        menuIcon.addEventListener('click', openMenu)
+
+        function openMenu() {
+            menu.style.width = "100%"
+            menu.style.maxWidth = "425px"
+        }
+
+        closeIcon.addEventListener('click', closeMenu)
+
+        function closeMenu() {
+            menu.style.width = "0%"
+            menu.style.maxWidth = "0"
+        }
+
+    </script>
+</body>
+
+</html>

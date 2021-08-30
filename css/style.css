@@ -1,0 +1,401 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 0 20px;
+}
+
+.bar {
+    background-color: #006341;
+    width: 168px;
+    height: 22px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+
+    border-radius: 3px;
+    border: solid 2px #454545;
+
+    text-transform: lowercase;
+
+    color: #454545;
+
+    padding: 10px 30px;
+
+    transform: 0.3s;
+}
+.button:hover {
+    color: #fff;
+    background-color: #454545;
+}
+
+body, input, textarea, button {
+    font-family: 'Open Sans';
+}
+
+nav {
+    z-index: 99;
+}
+
+nav ul {
+    transition: 0.3s;
+
+    list-style: none;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 0%;
+    background-color:rgb(17, 112, 80, .8);
+    
+}
+nav ul li:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding-top: 35px;
+    padding-right: 20px;
+}
+nav ul li:first-child div{
+    color: #fff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+nav ul li a{
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
+
+    color: #fff;
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    transition: 0.2s;
+
+    border-left: 5px solid transparent;
+}
+nav ul li a:hover {
+    border-left: solid 5px white;
+    filter: brightness(0.9);
+}
+
+/* Seções */
+
+/* Header */
+header .line {
+    background-color: #117050;
+
+    height: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 10px 0;
+}
+
+/* Ícone Starbucks ( menu ) */
+.header--logo {
+    width: 63px;
+    height: 63px;
+
+    border-radius: 50%;
+}
+.header--logo img {
+    width: 100%;
+    height: auto;
+}
+
+.header--menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Formulário ( busca ) */
+.header--menu form {
+    display: flex;
+    align-items: center;
+
+    margin-right: 80px;
+}
+.header--menu input {
+    width: 250px;
+    padding: 8px 20px;
+
+    outline: none;
+
+    font-size: 17px;
+
+}
+.header--menu button {
+    border: none;
+
+    background-color: transparent;
+    
+    width: 17px;
+    height: 17px;
+
+    margin-left: -40px;
+
+    cursor: pointer;
+}
+.header--menu button img {
+    width: 100%;
+    height: auto;
+}
+/* Ícone de menu */
+.header--menu-icon {   
+    width: 30px;
+    height: 35px; 
+
+    cursor: pointer;
+}
+
+
+/* Section ( Banner ) */
+.section--banner {
+    background-image: url('/assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    padding: 90px 0;
+}
+
+.banner h1 {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 90px;
+
+    line-height: 100px;
+
+    margin-bottom: 30px;
+}
+.banner span {
+    display: block;
+
+    margin-bottom: 80px;
+}
+
+.banner--images img {
+    width: 180px;
+    height: 180px;
+
+    border: solid 6px #117050;
+    border-radius: 50%;
+
+    margin-right: 40px;
+}
+
+
+/* Section ( Area1 ) */
+.section-area1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-area1--content {
+    padding: 80px;
+}
+.section-area1--content-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;
+
+    margin: 20px 0;
+}
+.section-area1--content-quote {
+    margin-bottom: 30px;
+}
+.section-area1--content-text {
+    margin-bottom: 50px;
+    
+    line-height: 25px;
+}
+
+.section-area1--img1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/f1.jpg');
+}
+
+.section-area1--img2 {
+    height: 350px;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/f2.jpg');
+} 
+
+/* Section ( Area2 ) */
+.section-area2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-area2--content {
+    padding: 80px;
+}
+.section-area2--content-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;
+
+    margin: 20px 0;
+}
+.section-area2--content-quote {
+    margin-bottom: 30px;
+}
+.section-area2--content-text {
+    margin-bottom: 50px;
+    
+    line-height: 25px;
+}
+
+.section-area2--img1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/f3.jpg');
+}
+
+.section-area2--img2 {
+    height: 450px;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/f4.jpg');
+} 
+
+/* Section ( Area3 ) */
+.section-area3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-area3--content {
+    padding: 200px 80px;
+
+    background-size: cover;
+    background-position: left;
+    background-image: url('/assets/bg2.jpg');
+}
+.section-area3--content-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;
+
+    margin: 20px 0;
+}
+.section-area3--content-text {
+    margin-bottom: 50px;
+    
+    line-height: 25px;
+}
+
+.section-area3--img {
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/f5.jpg');
+}
+
+
+/* Section ( Area4 ) */
+.section-area4 {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+
+    background:#e8e9ee;
+}
+
+.section-area4--content {
+    padding: 150px 80px;
+
+}
+.section-area4--content-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;
+
+    margin: 20px 0;
+}
+.section-area4--content-text {
+    margin-bottom: 50px;
+    
+    line-height: 25px;
+}
+
+.section-area4--img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    background-position: center;
+    background-image: url('/assets/bg3.jpg');
+}
+
+
+.section-area5 {
+    height: 600px;
+
+    background-size: cover;
+    background-position: bottom;
+    background-image: url('/assets/images/bg4.jpg');
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    background-color: #333;
+
+    height: 200px;
+}
